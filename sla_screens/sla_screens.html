@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <style>
+    html{
+       scroll-behavior:smooth;
+   }
+   .navbar{  
+       background-color: #055a60;
+       /* border-radius: 15px; */
+       max-height: 50px;
+       max-width: 3000px; 
+       top: 0px;
+       position:sticky;
+   }
+   .navbar ul{
+       overflow: auto;   
+   }
+   .navbar ul a{
+       text-decoration: none;
+       font-size: 20px;
+       color: white;  
+   }
+   .navbar li{
+       float: right;
+       list-style:none;
+       padding: 10px 10px;
+       margin: 3px 10px;
+   }
+   .navbar li a:hover{
+       color: red;
+       font-size: 23px;
+   }
+   .search{
+       float: center;
+       color: black;
+       margin: -42px 200px;
+   }
+   .navbar input{
+       border:2px solid black;
+       border-radius: 10px;
+       padding: 2px;
+   }
+   /* .logo1{
+       padding: 27px 19px; 
+       margin: -44px -32px;
+       /* height: 10%; */
+       /* width:  10%;  */
+       /* background-position-x: 10px; */
+       /* background-position-y: 10px; */
+       /* background-repeat: no-repeat;  */
+   /* }  */
+
+   .logo1{
+    padding: 0px 0px;
+    /* margin: 4px -14px; */
+    margin: 5px -12px;
+    width: 34%;
+    background-repeat: no-repeat;
+   }
+
+   table, th, td{
+       /* border: 2px solid rgb(0, 0, 0); */
+       border: 2px solid rgb(109, 43, 43);
+       border-collapse: collapse;
+   }
+    #heading{
+      /* background-color: rgb(167, 143, 143); */
+      color: rgb(0, 0, 0);
+   }
+   .sheet1_page{
+   /* background-color: rgb(252, 193, 116); */
+   color: gray;
+   }
+   .sheet2_page{
+   background-color: rgb(252, 193, 116);
+   color: black;
+   }
+   .login_page{
+   background-color: rgb(252, 193, 116);
+   color: black;
+   }
+   .contact_box{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding-bottom: 35px;
+     
+   }
+   .contact_box input, .contact_box textarea{
+   width: 100%;
+   padding: 1rem;
+   border-radius: 9px;
+   font-size: 1.5rem;
+   }
+   .contact_box form{
+   width: 40%;
+   /* border-color: 2px black;
+     border-radius: 2px; */
+   }
+   .contact_box label{
+    font-size: 3rem;
+   }
+</style>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLA Screens</title>
+    <link rel="stylesheet" href="sla_screens.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#admin"> <b>Admin</b> </a></li>
+                <li><a href="#login"> <b>Login</b> </a></li>
+                <li><a href="#sheet3"> <b>Sheet3</b> </a></li>
+                <li><a href="#sheet2"> <b>Sheet2</b> </a></li>
+                <li><a href="#sheet1"> <b>Sheet1</b> </a></li>
+                <li><a href="#home"> <b>Home</b> </a></li>
+
+            <section class="logo1">
+              <img class="logo1" src="../sla_screens/m&g_logo2.png" alt="No image found">
+              
+            </section>
+
+            <section class="search">
+               <input type="any" name="search" id="search" 
+               placeholder="         Search Here">
+            </section>
+
+           
+
+            </ul>
+        </nav>
+<!-- <script> -->
+  
+<!-- </script> -->
+    </header>  
+</body>
+
+
+<div id="sheet1" align="center">
+  <section>
+     <h2 class="sheet1_page" align="center">Subsidiary SLA</h2>
+    <table align="center">
+        <tr id="heading" align="center">
+          <th rowspan="2">&nbsp;SLA</th>
+            <!-- <th>SLA#</th> -->
+            <th rowspan="2">&nbsp;Measurement Name</th> 
+            <th rowspan="2">&nbsp;P'Mtres</th>
+            <th rowspan="2">&nbsp;Data Parameters</th>
+            <th rowspan="2">&nbsp;Target Formula</th>
+            <th rowspan="2">&nbsp;Service Period</th>
+            <th colspan="3">&nbsp;Month selector</th>
+          </tr>
+          <tr id="heading" align="center">
+            <th>&nbsp;Values</th>
+            <th>&nbsp;Percentage</th>
+            <th>&nbsp;Comments</th>
+          </tr>
+             <!-- Data 1 -->
+          <tr align="center">
+            <td rowspan="2">&nbsp;SLA_AGC_022</td>
+            <td rowspan="2">&nbsp;Proportion of Sprints Completed with No Critical / High Security Vulnerabilities where tool based scanning is possible</td>
+            <td>&nbsp;A</td>
+            <td>&nbsp;Number of Sprints completed during the Service Period, at the end of which no Critical / High Security Vulnerabilities were discovered within committed code</td>
+            <td rowspan="2">&nbsp;100%</td>
+            <td rowspan="2">&nbsp;Monthly</td>
+            <td>&nbsp;2</td>
+            <td rowspan="2">&nbsp;100%</td>
+            <td rowspan="2">&nbsp;Comment1</td>
+          </tr>
+          <tr align="center">
+            <td>&nbsp;B</td>
+            <td>&nbsp;Number of Sprints completed during the Service Period</td>
+            <td>&nbsp;2</td>
+          </tr>
+
+           <!-- Data 2 -->
+          <tr align="center">
+            <td rowspan="2">&nbsp;SLA_PT_001</td>
+            <td rowspan="2">&nbsp;Average Warranty Cycle Time</td>
+            <td>&nbsp;A</td>
+            <td>&nbsp;Total time taken from Release Deployment to Release Stability summed over all Releases during the Service Period</td>
+            <td rowspan="2">&nbsp;Less than 2 business days</td>
+            <td rowspan="2">&nbsp;Monthly</td>
+            <td>&nbsp;0</td>
+            <td rowspan="2">&nbsp;0%</td>
+            <td rowspan="2">&nbsp;Comment2</td>
+          </tr>
+          <tr align="center">
+            <td>&nbsp;B</td>
+            <td>&nbsp;Number of Releases during the Service Period</td>
+            <td>&nbsp;2</td>
+          </tr>
+
+           <!-- Data 3 -->
+          <tr align="center">
+            <td rowspan="2">&nbsp;SLA_AGC_001</td>
+            <td rowspan="2">&nbsp;Proportion of New Feature Teams Mobilised Within Six Weeks</td>
+            <td rowspan="2">&nbsp;A</td>
+            <td rowspan="2">&nbsp;Number of new Supplier Feature Teams not Mobilised within six weeks of formal request , unless otherwise agreed, from the Customer during the Service Period</td>
+            <!-- <td>&nbsp;</td>
+            <td>&nbsp;</td> -->
+            <td rowspan="2">&nbsp;Zero</td>
+            <td rowspan="2">&nbsp;Quaterly</td>
+            <td rowspan="2">&nbsp;</td>
+            <!-- <td>&nbsp;</td> -->
+            <td rowspan="2">&nbsp;NA</td>
+            <td rowspan="2">&nbsp;Comment3</td>
+          </tr>
+          <tr align="center"></tr>
+
+           <!-- Data 4 -->
+          <tr align="center">
+            <td rowspan="2">&nbsp;SLA_AGC_002</td>
+            <td rowspan="2">&nbsp;Time Taken to Achieve Feature Team Maturity</td>
+            <td rowspan="2">&nbsp;A</td>
+            <td rowspan="2">&nbsp;Number of Supplier Feature Teams which have been Mobilised for at least 8 weeks, but have not achieved Green on Customer's  Agile Team Health Check</td>
+            <!-- <td>&nbsp;</td>
+            <td>&nbsp;</td> -->
+            <td rowspan="2">&nbsp;Zero</td>
+            <td rowspan="2">&nbsp;Quaterly</td>
+            <td rowspan="2">&nbsp;</td>
+            <!-- <td>&nbsp;</td> -->
+            <td rowspan="2">&nbsp;NA</td>
+            <td rowspan="2">&nbsp;Comment4</td>
+          </tr>
+          <tr align="center"></tr>
+
+          <!-- <tr align="center">
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td> 
+          </tr>  -->
+          
+           <!-- Data 5 -->
+          <tr align="center">
+            <td rowspan="2">&nbsp;SLA_AGC_004</td>
+            <td rowspan="2">&nbsp;Supplier Regretted Team Churn</td>
+            <td>&nbsp;A</td>
+            <td>&nbsp;Number of Supplier Feature Team members who left, due to Regretted Churn, during the previous 12 month period</td>
+            <td rowspan="2">&nbsp;Less than 15%</td>
+            <td rowspan="2">&nbsp;Anually</td>
+            <td>&nbsp;</td>
+            <td rowspan="2">&nbsp;NA</td>
+            <td rowspan="2">&nbsp;Comment5</td>
+          </tr>
+          <tr align="center">
+            <td>&nbsp;B</td>
+            <td>&nbsp;Total number of Supplier Feature Team members working over the previous 12 month period</td>
+            <td>&nbsp;</td>
+          </tr>
+
+           <!-- Data 6 -->
+          <tr align="center">
+            <td rowspan="2">&nbsp;SLA_AGC_009</td>
+            <td rowspan="2">&nbsp;Percentage of Code Merge Requests whose Code passes the agreed Gate</td>
+            <td>&nbsp;A</td>
+            <td>&nbsp;Number of Code Merge Requests whose code passes the agreed tool  Quality Gate on merge during the Service Period</td>
+            <td rowspan="2">&nbsp;> 98%</td>
+            <td rowspan="2">&nbsp;Monthly</td>
+            <td>&nbsp;22</td>
+            <td rowspan="2">&nbsp;100%</td>
+            <td rowspan="2">&nbsp;Comment6</td>
+          </tr>
+          <tr align="center">
+            <td>&nbsp;B</td>
+            <td>&nbsp;Total number of Code Merge Requests during the Service Period</td>
+            <td>&nbsp;22</td>
+          </tr>
+
+           <!-- Data 6 -->
+          <tr align="center">
+            <td rowspan="2">&nbsp;SLA_AGC_014a</td>
+            <td rowspan="2">&nbsp;Proportion of Pull Requests Responded to within 1 hour</td>
+            <td>&nbsp;A</td>
+            <td>&nbsp;Proportion of Pull Requests Responded to within 1 hour</td>
+            <td rowspan="2">&nbsp;> 80%</td>
+            <td rowspan="2">&nbsp;Monthly</td>
+            <td>&nbsp;22</td>
+            <td rowspan="2">&nbsp;100%</td>
+            <td rowspan="2">&nbsp;Comment7</td>
+          </tr>
+          <tr align="center">
+            <td>&nbsp;B</td>
+            <td>&nbsp;Number of Pull Requests Responded to during the Service Period</td>
+            <td>&nbsp;22</td>
+          </tr>
+
+           <!-- Data 7 -->
+          <tr align="center">
+            <td rowspan="2">&nbsp;SLA_AGC_014b</td>
+            <td rowspan="2">&nbsp;Proportion of Pull Requests Resolved within 4 hours</td>
+            <td>&nbsp;A</td>
+            <td>&nbsp;Number of Pull Requests Resolved during the Service Period, within 4 business hours of being raised</td>
+            <td rowspan="2">&nbsp;> 80%</td>
+            <td rowspan="2">&nbsp;Monthly</td>
+            <td>&nbsp;2</td>
+            <td rowspan="2">&nbsp;100%</td>
+            <td rowspan="2">&nbsp;Comment8</td>
+          </tr>
+          <tr align="center">
+            <td>&nbsp;B</td>
+            <td>&nbsp;Number of Pull Requests Resolved during the Service Period</td>
+            <td>&nbsp;2</td>
+          </tr>
+
+           <!-- Data 8 -->
+          <tr align="center">
+            <td rowspan="2">&nbsp;SLA_AGC_015</td>
+            <td rowspan="2">&nbsp;Average Age of Pull Requests</td>
+            <td>&nbsp;A</td>
+            <td>&nbsp;Time to closure of all open Pull Requests, summed over all open Pull Requests during the Service Period</td>
+            <td rowspan="2">&nbsp;Less than 360 minutes</td>
+            <td rowspan="2">&nbsp;Monthly</td>
+            <td>&nbsp;22</td>
+            <td rowspan="2">&nbsp;100%</td>
+            <td rowspan="2">&nbsp;Comment9</td>
+          </tr>
+          <tr align="center">
+            <td>&nbsp;B</td>
+            <td>&nbsp;Total open Pull Requests during the Service Period</td>
+            <td>&nbsp;22</td>
+          </tr>
+
+           <!-- Data 9 -->
+          <tr align="center">
+            <td rowspan="2">&nbsp;SLA_AGC_017</td>
+            <td rowspan="2">&nbsp;Percentage of Forecasted Items / Stories / Points Completed during Sprint</td>
+            <td>&nbsp;A</td>
+            <td>&nbsp;Number of items / Stories / Story Points forecast to be completed and successfully completed during a Sprint during the Service Period</td>
+            <td rowspan="2">&nbsp;> 80%</td>
+            <td rowspan="2">&nbsp;Monthly</td>
+            <td>&nbsp;51</td>
+            <td rowspan="2">&nbsp;91%</td>
+            <td rowspan="2">&nbsp;Comment10</td>
+          </tr>
+          <tr align="center">
+            <td>&nbsp;B</td>
+            <td>&nbsp;Number of items / Stories / Story Points forecasted to be completed during a Sprint during the Service Period</td>
+            <td>&nbsp;56</td>
+          </tr>
+
+           <!-- Data 10 -->
+          <tr align="center">
+            <td rowspan="2">&nbsp;SLA_AGC_018</td>
+            <td rowspan="2">&nbsp;Proportion of Sprints Which Maintain or Improve Story Point Delivery</td>
+            <td>&nbsp;A</td>
+            <td>&nbsp;Number of Sprints completed during the Service Period, which deliver a greater or equal number of Story Points than the previous Sprint.</td>
+            <td rowspan="2">&nbsp;> 90%</td>
+            <td rowspan="2">&nbsp;Monthly</td>
+            <td>&nbsp;0</td>
+            <td rowspan="2">&nbsp;0%</td>
+            <td rowspan="2">&nbsp;Comment10 None of the sprints had increased SP than the previous print</td>
+          </tr>
+          <tr align="center">
+            <td>&nbsp;B</td>
+            <td>&nbsp;Number of Sprints completed during the Service Period</td>
+            <td>&nbsp;2</td>
+          </tr>
+
+    </table>
+  </section> 
+  </div>
+
+
+<div id="sheet2">
+      <section align="center"> 
+        <h2  class="sheet2_page">Sheet2 Page Here </h2>
+        <h3> Hey sheet2 </h3>
+        <h3> Hey sheet2 </h3>
+        <h3> Hey sheet2 </h3>
+      </section>
+</div>
+
+<div id="login">
+     <section align="center">
+       <h2 class="login_page"> Login Page Here </h2>
+        <div class="contact_box">
+          <form action="">
+
+            <label for="name">Email-ID: </label>
+            <input type="email" name="name" id="name"
+            placeholder="Enter Email-ID">
+
+            <label for="name">Password: </label>
+            <input type="text" name="name" id="name"
+            placeholder="Enter Password">
+
+          </form>
+        </div>
+     </section>
+</div>
+
+<div id="login">
+  <section align="center"> 
+    <h2  class="sheet2_page">Admin Page Here </h2>
+    <h3> Hey login Here </h3>
+    <h3> Hey login Here </h3>
+    <h3> Hey login Here </h3>
+  </section>
+</div>
+    <!-- <section id="s1" align="center">
+      <h2>Subsidiary SLA</h2>
+      <table  align="center">
+        <tr>
+          <th>SLA#</th>
+          <th>Measurement Name</th>
+          <th>P'Mtres</th>
+          <th>Data Parameters</th>
+          <th>Target Formula</th>
+          <th>Service Period</th>
+          <th>Month selector</th>
+        </tr>
+        
+        <tr>
+          <td>SLA_AGC_022</td>
+          <td>Proportion of Sprints Completed with No Critical / High Security Vulnerabilities where tool based scanning is possible</td>
+          <td></td>
+          <td></td>
+          <td>100%</td>
+          <td>Monthly</td>
+          <td>German</td>
+        </tr>
+        
+        <tr>
+          <td>SLA_PT_001</td>
+          <td>Average Warranty Cycle Time</td>
+          <td></td>
+          <td></td>
+          <td> Less than 2 business days</td>
+          <td>Monthly</td>
+          <td>German</td>
+        </tr>
+        
+        <tr> 
+          <td>SLA_AGC_001</td>
+          <td>Proportion of New Feature Teams Mobilised Within Six Weeks</td>
+          <td>A</td>
+          <td>Number of new Supplier Feature Teams not Mobilised within six weeks of formal request , unless otherwise agreed, from the Customer during the Service Period</td>
+          <td>Zero</td>
+          <td>Quarterly</td>
+          <td>German</td>
+        </tr>
+        
+        <tr>
+          <td>SLA_AGC_002</td>
+          <td>Time Taken to Achieve Feature Team Maturity</td>
+          <td>A</td>
+          <td>Number of Supplier Feature Teams which have been Mobilised for at least 8 weeks, but have not achieved Green on Customer's  Agile Team Health Check</td>
+          <td>Zero</td>
+          <td>Quarterly</td>
+          <td>German</td>
+        </tr>
+        
+        <tr>
+          <td>SLA_AGC_004</td>
+          <td>Supplier Regretted Team Churn</td>
+          <td></td>
+          <td></td>
+          <td> Less than 15%</td>
+          <td>Annually</td>
+          <td>German</td>
+        </tr>
+        
+  
+      </table>
+ </section> -->
+
+</html>
